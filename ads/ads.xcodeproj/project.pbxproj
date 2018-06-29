@@ -100,8 +100,7 @@
 				F071D45020E5BEA0005D3571 /* Views */,
 				F071D42220E5BE3F005D3571 /* AppDelegate.swift */,
 				F071D42420E5BE3F005D3571 /* ViewController.swift */,
-				F071D42920E5BE42005D3571 /* Assets.xcassets */,
-				F071D42E20E5BE42005D3571 /* Info.plist */,
+				F071D45120E5BEEB005D3571 /* Extras */,
 			);
 			path = ads;
 			sourceTree = "<group>";
@@ -131,6 +130,15 @@
 				F071D42B20E5BE42005D3571 /* LaunchScreen.storyboard */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		F071D45120E5BEEB005D3571 /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				F071D42920E5BE42005D3571 /* Assets.xcassets */,
+				F071D42E20E5BE42005D3571 /* Info.plist */,
+			);
+			name = Extras;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
