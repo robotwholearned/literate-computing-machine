@@ -14,7 +14,7 @@ class TapViewController: UIViewController {
 
     @IBOutlet weak var taps: UILabel!
 
-    @IBAction func didTapReset(_ sender: UIButton) {
+    @objc private func didTapReset(_ sender: UIButton) {
         interactorDelegate?.resetTap()
     }
     @IBAction func didTapTap(_ sender: UIButton) {
@@ -25,6 +25,8 @@ class TapViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         interactorDelegate = viewModel
         viewModel.uiDelegate = self
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "reset", style: .plain, target: self, action: #selector(didTapReset(_:)))
+        title = "Count Those Taps!"
     }
 }
 extension TapViewController: TapUIDelegate {
