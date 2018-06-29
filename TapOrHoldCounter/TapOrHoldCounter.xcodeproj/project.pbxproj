@@ -14,6 +14,9 @@
 		F071D3E720E5B650005D3571 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F071D3E520E5B650005D3571 /* LaunchScreen.storyboard */; };
 		F071D3F220E5B650005D3571 /* TapOrHoldCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F071D3F120E5B650005D3571 /* TapOrHoldCounterTests.swift */; };
 		F071D3FD20E5B650005D3571 /* TapOrHoldCounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F071D3FC20E5B650005D3571 /* TapOrHoldCounterUITests.swift */; };
+		F071D40D20E5B6E1005D3571 /* TapUIDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F071D40A20E5B6E1005D3571 /* TapUIDelegate.swift */; };
+		F071D40E20E5B6E1005D3571 /* TapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F071D40B20E5B6E1005D3571 /* TapViewModel.swift */; };
+		F071D40F20E5B6E1005D3571 /* TapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F071D40C20E5B6E1005D3571 /* TapInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		F071D3F820E5B650005D3571 /* TapOrHoldCounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TapOrHoldCounterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F071D3FC20E5B650005D3571 /* TapOrHoldCounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapOrHoldCounterUITests.swift; sourceTree = "<group>"; };
 		F071D3FE20E5B650005D3571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F071D40A20E5B6E1005D3571 /* TapUIDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapUIDelegate.swift; sourceTree = "<group>"; };
+		F071D40B20E5B6E1005D3571 /* TapViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapViewModel.swift; sourceTree = "<group>"; };
+		F071D40C20E5B6E1005D3571 /* TapInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +104,11 @@
 			isa = PBXGroup;
 			children = (
 				F071D3DC20E5B64D005D3571 /* AppDelegate.swift */,
-				F071D3E020E5B64D005D3571 /* Main.storyboard */,
-				F071D3E320E5B650005D3571 /* Assets.xcassets */,
-				F071D3E520E5B650005D3571 /* LaunchScreen.storyboard */,
-				F071D3E820E5B650005D3571 /* Info.plist */,
+				F071D41320E5B790005D3571 /* Protocols */,
+				F071D41120E5B732005D3571 /* Struts */,
 				F071D41420E5B7A9005D3571 /* ViewControllers */,
+				F071D41520E5B7B8005D3571 /* ViewModels */,
+				F071D41220E5B758005D3571 /* Views/Storyboards */,
 			);
 			path = TapOrHoldCounter;
 			sourceTree = "<group>";
@@ -125,12 +131,47 @@
 			path = TapOrHoldCounterUITests;
 			sourceTree = "<group>";
 		};
+		F071D41120E5B732005D3571 /* Struts */ = {
+			isa = PBXGroup;
+			children = (
+				F071D3E320E5B650005D3571 /* Assets.xcassets */,
+				F071D3E820E5B650005D3571 /* Info.plist */,
+			);
+			name = Struts;
+			sourceTree = "<group>";
+		};
+		F071D41220E5B758005D3571 /* Views/Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F071D3E520E5B650005D3571 /* LaunchScreen.storyboard */,
+				F071D3E020E5B64D005D3571 /* Main.storyboard */,
+			);
+			name = Views/Storyboards;
+			sourceTree = "<group>";
+		};
+		F071D41320E5B790005D3571 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F071D40C20E5B6E1005D3571 /* TapInteractor.swift */,
+				F071D40A20E5B6E1005D3571 /* TapUIDelegate.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
 		F071D41420E5B7A9005D3571 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				F071D3DE20E5B64D005D3571 /* TapViewController.swift */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F071D41520E5B7B8005D3571 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F071D40B20E5B6E1005D3571 /* TapViewModel.swift */,
+			);
+			name = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +306,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F071D3DF20E5B64D005D3571 /* TapViewController.swift in Sources */,
+				F071D40D20E5B6E1005D3571 /* TapUIDelegate.swift in Sources */,
+				F071D40F20E5B6E1005D3571 /* TapInteractor.swift in Sources */,
+				F071D40E20E5B6E1005D3571 /* TapViewModel.swift in Sources */,
 				F071D3DD20E5B64D005D3571 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
