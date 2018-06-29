@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  TapViewController.swift
 //  TapOrHoldCounter
 //
 //  Created by Cassandra Sandquist on 6/28/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class TapViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
