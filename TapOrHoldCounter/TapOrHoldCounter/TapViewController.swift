@@ -17,4 +17,10 @@ class TapViewController: UIViewController {
 
 
 }
+extension TapViewController: TapUIDelegate {
+    func didUpdateTapCount(count: String) {
+        taps.text = count
+    }
+}
+
 

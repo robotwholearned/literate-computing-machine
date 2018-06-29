@@ -13,7 +13,7 @@ final class TapViewModel {
 
     private var tapCount = 0 {
         didSet {
-            uiDelegate?.didUpdateTapCount(count: tapCount)
+            uiDelegate?.didUpdateTapCount(count: "\(tapCount)")
         }
     }
 }

@@ -7,5 +7,5 @@
 //
 
 protocol TapUIDelegate: AnyObject {
-    func didUpdateTapCount(count: Int)
+    func didUpdateTapCount(count: String)
 }
