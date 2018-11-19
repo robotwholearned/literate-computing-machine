@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Tip Calculator View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tipcalculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="TipCalculatorViewController" customModule="tipcalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -76,6 +76,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="KGi-nT-Tca"/>
+                    <connections>
+                        <outlet property="subtotal" destination="PPf-ox-Opb" id="5SX-Jo-c90"/>
+                        <outlet property="tip" destination="69T-me-6P7" id="T7R-tQ-ZKl"/>
+                        <outlet property="tipPercentage" destination="WL5-vj-Ud7" id="KsI-Dp-WWf"/>
+                        <outlet property="tipSlider" destination="olo-qM-3d7" id="abg-w3-Drd"/>
+                        <outlet property="total" destination="HE4-tU-co0" id="YRL-NH-bgP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
